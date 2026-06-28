@@ -12,6 +12,7 @@ h1{
     font-size: 48px;
     color: #B76E79;
     margin-bottom: 10px;
+    animation: fadeIn 1s ease;
 }
 h2{
     color: #A05252;
@@ -49,6 +50,9 @@ th, td{
     border: 1px solid #D8A7A7;
     padding: 10px;
     text-align: center;
+}
+tr:hover{
+    background-color: #FFF0F3;
 }
 form{
     background-color: #FFF5F5;
@@ -226,4 +230,14 @@ input[type="submit"]:hover{
     font-weight: bold;
     color:#B76E79;
     margin-top: 10px;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
