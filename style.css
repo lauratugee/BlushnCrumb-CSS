@@ -3,7 +3,7 @@
 body{
     background-color: #FFF6F7;
     font-family: 'Poppins',  sans-serif;
-    color: #5C4033;;
+    color: #5C4033;
     margin: 0;
     padding: 20px;
 }
@@ -70,9 +70,10 @@ input, select, textarea{
 footer{
     background-color: #FADADD;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 50px;
     color: #5C4033;
+    border-radius: 10px;
 }
 hr{
     border: 1px solid #D8A7A7;
@@ -152,19 +153,23 @@ input[type="submit"]:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 .flip-card{
     background-color: transparent;
     width: 280px;
     height: 350px;
     perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+.flip-card:hover{
+    transform: translateY(-8px);
 }
 .flip-card-inner{
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 0.6s ease;
     transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner{
@@ -177,6 +182,7 @@ input[type="submit"]:hover{
     border-radius: 15px;
     overflow: hidden;
     backface-visibility: hidden;
+    box-shadow: 0 6px 15px  rgba(0,0,0,0.15);
 }
 .flip-card-front img{
     width: 100%;
@@ -195,4 +201,10 @@ input[type="submit"]:hover{
 
     padding: 20px;
     text-align: center;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    color:#B76E79;
+    margin-top: 10px;
 }
